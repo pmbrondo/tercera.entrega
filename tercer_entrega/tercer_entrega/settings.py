@@ -55,7 +55,7 @@ ROOT_URLCONF = 'tercer_entrega.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [R"C:/Users/ext83787/Desktop/Tercer_entrega/tercer_entrega/app_entrega3/templates/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
