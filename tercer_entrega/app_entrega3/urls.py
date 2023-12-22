@@ -1,7 +1,8 @@
 from django.urls import path
-from app_entrega3.views import primer_vista,primer_template
+from app_entrega3.views import primer_vista,primer_template,pag_inicio
 
 urlpatterns = [
-    path("",primer_vista),
+    path("saludo",primer_vista),
     path("temp/",primer_template),
+    path("",pag_inicio),
 ]

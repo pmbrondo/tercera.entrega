@@ -13,3 +13,6 @@ def primer_template(request):
         "edad":34,
     }
     return  render(request, "primera.html",variablemias)
+
+def pag_inicio(request):
+    return render(request,"inicio.html")
