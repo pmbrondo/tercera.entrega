@@ -1,8 +1,10 @@
 from django.urls import path
-from app_entrega3.views import primer_vista,primer_template,pag_inicio
+from app_entrega3.views import pag_inicio,tema,artista,disco
 
 urlpatterns = [
-    path("saludo",primer_vista),
-    path("temp/",primer_template),
-    path("",pag_inicio),
+
+    path("",pag_inicio,name='inicio.html'),
+    path("tema/",tema,name='tema.html'),
+    path("artista/",artista,name='artista.html'),
+    path("disco/",disco,name='disco.html')
 ]
