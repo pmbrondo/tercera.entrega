@@ -11,7 +11,7 @@ class Compositor(models.Model):
 
 class Temas(models.Model):
     nombre_tema=models.CharField(max_length=30)
-    duracion=models.DurationField()
+    duracion=models.ImageField()
 
     def __str__(self):
         return f"{self.nombre_tema},{self.duracion}"
@@ -21,7 +21,7 @@ class Temas(models.Model):
 class Disco(models.Model):
     nombre_disco=models.CharField(max_length=30)
     artista_disco=models.CharField(max_length=30)
-    duracion_disco=models.CharField(max_length=30)
+    duracion_disco=models.ImageField()
 
     def __str__(self):
         return  f"{self.nombre_disco},{self.artista_disco} ** {self.duracion_disco}"

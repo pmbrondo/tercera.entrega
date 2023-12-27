@@ -24,7 +24,8 @@
                 <a class="navbar-brand" href="{% url 'artista.html' %}">Artista</a>
                 <a class="navbar-brand" href="{% url 'tema.html' %}">Temas</a>
                 <a class="navbar-brand" href="{% url 'disco.html' %}">Discos</a>
-                <a class="btn btn-primary" href="#signup">Actualizar!</a>
+                <a class="navbar-brand" href="{% url 'miformulario.html' %}">Cargar datos</a>
+                
             </div>
         </nav>
         <!-- Masthead-->
@@ -90,6 +91,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="{% static 'app/artista/js/scripts.js' %}"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
