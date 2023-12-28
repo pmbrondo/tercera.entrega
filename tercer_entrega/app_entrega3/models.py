@@ -7,15 +7,14 @@ class Compositor(models.Model):
     disco=models.CharField(max_length=30)
 
     def __str__(self):
-        return f"{self.nombre},{self.disco}"
+        return f"{self.nombre}"
 
 class Temas(models.Model):
     nombre_tema=models.CharField(max_length=30)
-    duracion=models.ImageField()
+    duracion=models.IntegerField()
 
     def __str__(self):
         return f"{self.nombre_tema},{self.duracion}"
-
 
 
 class Disco(models.Model):

@@ -1,6 +1,13 @@
 {% extends 'padre.html' %}
 {% load static %}
 {% block dinamico %}
-<h1>Estos son los temas guardados!!</h1>
-<h2>Mi lista!!</h2>
+
+
+<h1>Temas guardados!!</h1>
+<body>
+    {% for ver in tema %}
+    {{ver}}<br/>
+    {% endfor %}
+</body>
+
 {% endblock %}

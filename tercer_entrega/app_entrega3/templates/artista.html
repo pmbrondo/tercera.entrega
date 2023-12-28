@@ -1,17 +1,10 @@
 {% extends 'padre.html' %}
 {% load static %}
 {% block dinamico %}
-    <h1>Artistas guardados!!</h1>
-    <body>
-        {% for compositor in muestracompositor %}
-            <h2>{{ compositor.nombre }}</h2>
-            <ul>
-                {% for disco in compositor.discos.all %}
-                    <li>{{ disco.nombre }}</li>
-                {% endfor %}
-            </ul>
-        {% endfor %}
-    </body>
+
+{% for post in Compositor %}
+  {{post}}
+{% endfor %}
 {% endblock %}
 
 

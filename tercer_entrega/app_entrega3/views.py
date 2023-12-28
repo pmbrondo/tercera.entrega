@@ -1,19 +1,21 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from app_entrega3.models import Compositor,Temas,Disco
+from app_entrega3.models import *
 
 
 # Create your views here.
-def artista(request):
-    muestracompositor=Compositor.objects.all()
-    discos=Disco.objects.all()
+def vista_compositor(request):
+    compositor=Compositor.objects.all()
+    return render(request,"respuesta.html",{"compositor":compositor})
 
-    context={
-        "muestracompositor":muestracompositor,
-    }
+def tema(request):
+    tema=Temas.objects.all()
+    return render(request,'tema.html',{"tema":tema})
 
-    print(muestracompositor)
-    return render(request,"artista.html",context)
+
+def disco(request):
+    disco=Disco.objects.all()
+    return render (request,'disco.html',{"disco":disco})
 
 
 def pag_inicio(request):
@@ -21,15 +23,13 @@ def pag_inicio(request):
 
 
 
-def tema(request):
-    return render(request,'tema.html')
+
 
 
 def artista(request):
     return render(request,'artista.html')
 
-def disco(request):
-    return render (request,'disco.html')
+
 
 def miformulario(request):
     if request.method=="POST":

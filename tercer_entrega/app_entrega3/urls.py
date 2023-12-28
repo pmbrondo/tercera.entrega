@@ -1,5 +1,5 @@
 from django.urls import path
-from app_entrega3.views import pag_inicio,tema,artista,disco,miformulario
+from app_entrega3.views import pag_inicio,tema,artista,disco,miformulario,vista_compositor
 
 urlpatterns = [
 
@@ -8,4 +8,5 @@ urlpatterns = [
     path("artista/",artista,name='artista.html'),
     path("disco/",disco,name='disco.html'),
     path("formulario",miformulario,name="miformulario.html"),
+    path("respuesta",vista_compositor,name="respuesta.html"),
 ]
