@@ -20,7 +20,7 @@ class Temas(models.Model):
 class Disco(models.Model):
     nombre_disco=models.CharField(max_length=30)
     artista_disco=models.CharField(max_length=30)
-    duracion_disco=models.ImageField()
+    duracion_disco=models.IntegerField()
 
     def __str__(self):
         return  f"{self.nombre_disco},{self.artista_disco} ** {self.duracion_disco}"
