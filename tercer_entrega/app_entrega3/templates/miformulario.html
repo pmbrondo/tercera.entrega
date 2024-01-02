@@ -14,7 +14,7 @@
 </head>
  <h1> Formulario de carga:</h1>
 <body>
-    <form action="{% url 'miformulario.html' %}" method ="post"><{% csrf_token %}>
+    <form action="{% url 'miformulario.html' %}" method ="post" {% csrf_token %}
         <h2> Compositor! </h2>
         <p>Nombre Artista: <input type="text" name="nombre"> </p>
         <p>Nombre Disco: <input type="text" name="disco"> </p>
